@@ -12,6 +12,16 @@ body {
   line-height: 1.6;
 }
 
+/* 프로필 이미지 스타일 */
+#info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* 원형 프로필 */
+  object-fit: cover;  /* 잘린 이미지 깔끔하게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  margin-bottom: 10px;
+}
+
 /* 헤더 및 네비게이션 */
 header {
   background-color: #222;
