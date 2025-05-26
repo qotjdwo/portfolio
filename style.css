@@ -1,38 +1,98 @@
-body {
-  font-family: 'Arial', sans-serif;
+/* 기본 설정 */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
   line-height: 1.6;
 }
 
+/* 헤더 및 네비게이션 */
 header {
-  background-color: #333;
+  background-color: #222;
   color: white;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
+  margin-top: 10px;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #1abc9c;
+}
+
+/* 섹션 */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* 연락처 링크 */
+a {
+  color: #1abc9c;
   text-decoration: none;
 }
 
-section {
-  padding: 20px;
+a:hover {
+  text-decoration: underline;
 }
 
+/* 푸터 */
 footer {
-  background-color: #f4f4f4;
+  background-color: #eee;
+  color: #555;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
 }
